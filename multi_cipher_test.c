@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#define KEY 3  // Å°´Â ÀÚ¿¬¼ö
+#define KEY 3  // í‚¤ëŠ” ìžì—°ìˆ˜
 #define SPACE 26
 #define RETURN_TEST 1.0
 /*
 	***********************CHALLENGE 7**********************
-                                            ÃâÃ³ : ¾ÏÈ£ÇÐ °ú¿Ü
-                                    °ö¼À ¾ÏÈ£ (ASCII CODE 127)
+                            ì¶œì²˜ : ì•”í˜¸í•™ ê³¼ì™¸
+                        ê³±ì…ˆ ì•”í˜¸ (ASCII CODE 127)
 	************************************************************
-                                                   °³¼±ÇÒ Á¡
-                                                  inverse ±¸Çö
-                                              decoding ÇÔ¼ö ±¸Çö
+                                  ê°œì„ í•  ì 
+                                inverse êµ¬í˜„
+                              decoding í•¨ìˆ˜ êµ¬í˜„
 */
 void encoding_func(char[], char*, int, int);
 void decoding_func(char[], char*, int, int);
@@ -53,7 +53,7 @@ int inverse_gcd2Euclid(int key, int space, int gcd_mid, int space_mid, int gcd_m
 	{
 		if ((space % key) > 1)
 		{
-			space_mid = space; // gcd == 1 °æ¿ì, ³ª¸ÓÁö < 1
+			space_mid = space; // gcd == 1 ê²½ìš°, ë‚˜ë¨¸ì§€ < 1
 			gcd_mid2 = (space - (space % key)) / (space / key);
 		}
 		if(space % key == 1)
